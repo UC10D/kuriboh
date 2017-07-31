@@ -2,7 +2,7 @@
     "name": "kuribon",
     "displayName": "Kuribon",
     "description": "lua help tools",
-    "version": "0.0.1",
+    "version": "0.2.0",
     "publisher": "uc10d",
     "engines": {
         "vscode": "^1.14.0"
@@ -11,7 +11,8 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.addHeadNote"
+        "onCommand:extension.addHeadNote",
+        "onCommand:extension.formatEntity"
     ],
     "main": "./out/src/extension",
     "contributes": {
@@ -20,6 +21,11 @@
                 "command": "extension.addHeadNote",
                 "title": "head note",
                 "key": "shift+cmd+1"
+            },
+            {
+                "command": "extension.formatEntity",
+                "title": "init and creat entity",
+                "key": "shift+cmd+2"
             }
         ]
     },
