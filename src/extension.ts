@@ -78,8 +78,12 @@ export function activate(context: vscode.ExtensionContext) {
                 let strInit = '';
                 let strClear = '';
 
-                strCtor = 'unity.exports.' + className + '= class("' + className + '")  \n\n'
-                strCtor = strCtor + 'function  ' + className + ':Ctor() \n'
+                strCtor = '--==============================--\n'
+                strCtor = strCtor + '-- des:\n'
+                strCtor = strCtor + '-- msg:\n'
+                strCtor = strCtor + '--==============================--\n'
+                strCtor = strCtor + 'unity.exports.' + className + '= class("' + className + '")  \n\n'
+                strCtor = strCtor + 'function ' + className + ':Ctor() \n'
                 strCtor = strCtor + initParamsTemple(keyList, valueList)
                 strCtor = strCtor + 'end'
 
@@ -141,7 +145,7 @@ function initParamsTemple(keyList, valueList) {
         } else {
             strTemp = ' = 0'
         }
-        strLast = strLast + '    ' + keyList[i] + strTemp + '          --' + valueList[i] + '\n';
+        strLast = strLast + '    self.' + keyList[i] + strTemp + '          --' + valueList[i] + '\n';
     }
     return strLast
 }

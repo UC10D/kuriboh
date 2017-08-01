@@ -2,7 +2,7 @@
     "name": "kuribon",
     "displayName": "Kuribon",
     "description": "lua help tools",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "publisher": "uc10d",
     "engines": {
         "vscode": "^1.14.0"
