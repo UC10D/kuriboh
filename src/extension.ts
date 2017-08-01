@@ -40,6 +40,8 @@ export function activate(context: vscode.ExtensionContext) {
             }
 
             let className = msg.toString().trim()
+            className = className[0].toUpperCase() + className.slice(1)
+            // console.log("------------className:" + className[0].toUpperCase() + className.slice(1))
 
             // 字段
             vscode.window.showInputBox(options2).then(function (msg) {
@@ -125,10 +127,11 @@ function initHeadTemple() {
     let timeStr = year + '/' + month + '/' + day
 
     // Define header content
+    var config = vscode.workspace.getConfiguration('param')
     var str1 = "--------------------------------------------------------";
     var str2 = "-- @des";
-    var str3 = "-- @com  ©2017福州博翼互娱网络科技有限公司";
-    var str4 = "-- @author 822LL";
+    var str3 = "-- @com  " + config.Company;
+    var str4 = "-- @author " + config.Author;
     var str5 = "-- @time  " + timeStr;
 
     var strLast = str1 + '\n' + str2 + '\n' + str3 + '\n' + str4 + '\n' + str5 + '\n' + str1
