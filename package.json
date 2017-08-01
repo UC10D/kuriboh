@@ -1,12 +1,16 @@
 {
     "name": "kuribon",
     "displayName": "Kuribon",
-    "description": "lua help tools",
+    "description": "lua tools for u3d",
     "version": "0.2.2",
     "icon": "images/icon.png",
     "publisher": "uc10d",
     "engines": {
         "vscode": "^1.14.0"
+    },
+     "repository": {
+        "type": "git",
+        "url": "https://github.com/UC10D/kuriboh.git"
     },
     "categories": [
         "Other"
@@ -19,7 +23,7 @@
     "contributes": {
         "configuration": {
             "type": "object",
-            "title": "lua file header configuration",
+            "title": "kuribon configurations",
             "properties": {
                 "param.Author": {
                     "type": "string",
