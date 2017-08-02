@@ -26,8 +26,9 @@ guild_level 	 # int32 公会等级
 guild_name 	 # string 公会名字   
 member_count 	 # int32 当前人数    
 ```
-复制后直接生成实体类代码。目前支持 int， string类型。 
-string切割逻辑：复制字段后发现 key 和 value 后面都带一个 “\t”。
+复制后直接生成实体类代码。目前支持 int， string类型。     
+string切割逻辑：复制字段后发现 key 和 value 后面都带一个 “\t”。 
+
 ![](./_image/E49AB3CD-3C25-462C-8F97-E8EE2DF8F4D7.png)
 
 
