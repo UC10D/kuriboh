@@ -20,18 +20,17 @@ A tool for lua（u3d）
 吐槽下：输入框单一，不知道怎么修改。
 有知道的请告知。
 ```
-guild_id 	 # int64 公会id
-guild_icon 	 # int32 公会图标
-guild_level 	 # int32 公会等级
-guild_name 	 # string 公会名字
-member_count 	 # int32 当前人数
+guild_id 	 # int64 公会id  
+guild_icon 	 # int32 公会图标. 
+guild_level 	 # int32 公会等级  
+guild_name 	 # string 公会名字  
+member_count 	 # int32 当前人数  
 ```
 复制后直接生成实体类代码。目前支持 int， string类型。    
 ![](./_image/E49AB3CD-3C25-462C-8F97-E8EE2DF8F4D7.png)
 
 
-## next step :    
-    类名首字母大写    
+## next step :       
     添加单字段    
     支持 List    
     req，res temple    
