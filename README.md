@@ -21,7 +21,7 @@ A tool for lua（u3d）
 有知道的请告知。
 ```
 guild_id 	 # int64 公会id  
-guild_icon 	 # int32 公会图标. 
+guild_icon 	 # int32 公会图标  
 guild_level 	 # int32 公会等级  
 guild_name 	 # string 公会名字  
 member_count 	 # int32 当前人数  
