@@ -41,7 +41,6 @@ export function activate(context: vscode.ExtensionContext) {
 
             let className = msg.toString().trim()
             className = className[0].toUpperCase() + className.slice(1)
-            // console.log("------------className:" + className[0].toUpperCase() + className.slice(1))
 
             // 字段
             vscode.window.showInputBox(options2).then(function (msg) {
@@ -80,16 +79,17 @@ export function activate(context: vscode.ExtensionContext) {
                 let strInit = '';
                 let strClear = '';
 
+                var config = vscode.workspace.getConfiguration('param')
                 strCtor = '--==============================--\n'
                 strCtor = strCtor + '-- des:\n'
                 strCtor = strCtor + '-- msg:\n'
                 strCtor = strCtor + '--==============================--\n'
-                strCtor = strCtor + 'unity.exports.' + className + '= class("' + className + '")  \n\n'
+                strCtor = strCtor + config.Type + '.exports.' + className + '= class("' + className + '")  \n\n'
                 strCtor = strCtor + 'function ' + className + ':Ctor() \n'
                 strCtor = strCtor + initParamsTemple(keyList, valueList)
                 strCtor = strCtor + 'end'
 
-                strInit = 'function ' + className + ':InitDate(data) \n';
+                strInit = 'function ' + className + ':InitData(data) \n';
                 for (var i = 0; i < keyList.length; i++) {
                     strInit = strInit + '    self.' + keyList[i] + ' = data.' + keyList[i] + '          --' + valueList[i] + '\n';
                 }
@@ -130,7 +130,7 @@ function initHeadTemple() {
     var config = vscode.workspace.getConfiguration('param')
     var str1 = "--------------------------------------------------------";
     var str2 = "-- @des";
-    var str3 = "-- @com  " + config.Company;
+    var str3 = "-- @copyright  " + config.Company;
     var str4 = "-- @author " + config.Author;
     var str5 = "-- @time  " + timeStr;
 

@@ -1,8 +1,8 @@
 {
     "name": "kuribon",
     "displayName": "Kuribon",
-    "description": "lua tools for u3d",
-    "version": "0.2.2",
+    "description": "lua tools for u3d,coco",
+    "version": "0.2.3",
     "icon": "images/icon.png",
     "publisher": "uc10d",
     "engines": {
@@ -11,6 +11,10 @@
      "repository": {
         "type": "git",
         "url": "https://github.com/UC10D/kuriboh.git"
+    },
+    "bugs": {
+        "url": "https://github.com/UC10D/kuriboh/issues",
+        "email": "124073651@qq.com"
     },
     "categories": [
         "Other"
@@ -32,8 +36,13 @@
                 },
                 "param.Company": {
                     "type": "string",
-                    "default": "©2017福州博翼互娱网络科技有限公司",
+                    "default": "Microsoft Corporation. All rights",
                     "description": "company"
+                },
+                "param.Type": {
+                    "type": "string",
+                    "default": "unity",
+                    "description": "type"
                 }
             }
         },

@@ -1,5 +1,5 @@
 # Kuribon
-A tool for lua（u3d）    
+A tool for lua（u3d, cc）    
 打包：vsce package    
 开发适配mac，win下自测    
 - - - - 
@@ -13,6 +13,8 @@ A tool for lua（u3d）
 修改配置参数：code - 首选项 - 设置      
 ![](./_image/52D1BF41-B60E-4F84-8902-31F55A6A25B9.png)        
 点击编辑或者复制到右侧
+
+新增第三个type参数，cc 表示coco项目，unity 表示u3d项目     
 
 ## 2.lua实体类生成器: cmd + shift + 2
 按快捷键，第一个窗口输入类名，支持第一个字母小写转大写。
